@@ -5,10 +5,10 @@
 					<a href="index.php">Home</a>
 				</li>
 				<li>
-					<a href="history.php">History</a>
+					<a href="lion.php">Lion</a>
 				</li>
 				<li>
-					<a href="culture.php">Culture</a>
+					<a href="giraffe.php">Giraffe</a>
 				</li>
 			</ul>
 
