@@ -1,0 +1,62 @@
+<?php include "inc/html-top.inc";?>
+	<body>
+	<section class = "banner">
+        <?php include "inc/header.inc"; ?>
+        <?php include "inc/nav.inc"; ?>
+	</section>
+	<main>
+		<div class="container">
+            <p class="lead too-wide">Mexican culture reflects the complexity of the country's history through the blending of indigenous cultures and the culture of Spain, imparted during Spain's 300-year colonization of Mexico. Exogenous cultural elements have been incorporated into Mexican culture as time has passed. The Porfirian era (el Porfiriato), in the last quarter of the 19th century and the first decade of the 20th century, was marked by economic progress and peace. After four decades of civil unrest and war, Mexico saw the development of philosophy and the arts, promoted by President Díaz himself. Since that time, as accentuated during the Mexican Revolution, cultural identity has had its foundation in the mestizaje, of which the indigenous (i.e. Amerindian) element is the core. In light of the various ethnicities that formed the Mexican people, José Vasconcelos in his publication La Raza Cósmica (The Cosmic Race) (1925) defined Mexico to be the melting pot of all races (thus extending the definition of the mestizo) not only biologically but culturally as well.</p>
+
+			<section class="l-fpattern">
+			<h2>Painting</h2>
+			<div>
+                <p>TThe painting is one of the oldest arts in Mexico. The cave painting in Mexican territory is about 7500 years old, and has been manifested in the caves of the Baja California Peninsula. Pre-Hispanic Mexico is present in buildings and caves, in Aztec codices, in ceramics, in garments, etc. .; examples of this are the Maya mural paintings of Bonampak, or those of Teotihuacán, those of Cacaxtla and those of Monte Albán. The mural painting had an important flowering during the 16th century, the same in religious constructions as in houses of lineage; such is the case of the convents of Acolman, Actopan, Huejotzingo, Tecamachalco and Zinacantepec. It is said that they were mainly indigenous painters led by friars who made them. These were also manifested in illustrated manuscripts such as the Matrícula de Tributos.</p>
+                <p>For a time it was believed that the first European painter living in New Spain was Rodrigo de Cifuentes, an apocryphal artist who even came to be attributed works such as The Baptism of the Caciques de Tlaxcala, painting of the main altarpiece of the Convent of San Francisco in Tlaxcala. Among the native painters was Marcos Aquino. The religiosity of the Novohispanos ("New-spanish") made that the painting was important for the evangelization of the society, the friars realized the graphic skills of the natives, who enriched the baroque and mannerist style. The arrival of several European painters and some students from New Spain, such as Juan Correa, Cristóbal de Villalpando or Miguel Cabrera, who made the walls and altarpieces the main source of ideological and political expression of artists.</p>
+                <p>The painting of the 19th century had a very marked romantic influence, landscapes and portraits were the greatest expression of this era. Hermenegildo Bustos is one of the most appreciated painters of the historiography of Mexican art. They also emphasize in these years Santiago Rebull, José Salomé Pina, Félix Parra, Eugenio Landesio and his famous disciple, the landscaper José María Velasco Gómez, as well like Julio Ruelas. The Mexican painting of the 20th century has achieved world renown with figures such as David Alfaro Siqueiros, José Clemente Orozco, Joaquín Clausell, Frida Kahlo and Diego Rivera, generation of idealists who marked the image of modern Mexico in the face of strong social and economic criticism. The Oaxacan School quickly gained fame and prestige, diffusion of an ancestral and modern culture, freedom of design is observed in relation to the color and texture of the canvases and murals as a period of transition between the 20th century and the 21st century.</p>
+                <p>Some of the most outstanding painters in the 21st century (current painters): Patricia Calvo Guzmán. She studied painting in Beijing. Her work, of marked oriental influence, recalls the cut paper figures of Mexico and China, mixing them with a rich chromatic range; Eliseo Garza Aguilar, painter and performer considered among the leading exponents of the provocative and reflective art of the Third Millennium; in search of a critical response from the spectators, he combines his pictorial work in the performances with theatrical histrionics; Pilar Goutas, a painter who uses oil on amate support, with strong influence from Jackson Pollock and Chinese calligraphy; Rafael Torres Correa settles his residence in Mexico in 2001 and joins the contemporary art workshop "La Polilla" in Guadalajara, and performs various plastic and scenographic projects. Throughout history several prominent painters of different nationalities have expressed in their works the face of Mexico. Among the most outstanding we can mention Daniel Thomas Egerton, Carl Nebel, Thomas Moran, Édouard Manet and Leonora Carrington.</p>
+			</div>
+			<div>
+				<figure class="photo-frame">
+					<img src="images/painting.jpg" alt="Colonial Mexico artwork">
+					<figcaption>The art of the Colonial Mexico (center of New Spain) developed a large number of painters born in Mexico. Now these works are preserved in museums in many cities of Mexico.</figcaption>
+				</figure>
+			</div>
+			</section>
+
+			<section class="l-fpattern">
+            <h2>Architecture</h2>
+            <div>
+			    <p>The presence of the human being in the Mexican territory has left important archaeological findings of great importance for the explanation of the habitat of primitive man and contemporary man. The Mesoamerican civilizations managed to have great stylistic development and proportion on the human and urban scale, the form was evolving from simplicity to aesthetic complexity; in the north of the country the adobe and stone architecture is manifested, the multifamily housing as we can see in Casas Grandes; and the troglodyte dwelling in caves of the Sierra Madre Occidental. Urbanism had a great development in pre-Hispanic cultures, where we can see the magnitude of the cities of Teotihuacán, Tollan-Xicocotitlan and México-Tenochtitlan, within the environmentalist urbanism highlight the Mayan cities to be incorporated into the monumentality of its buildings with the thickness of the jungle and complex networks of roads called sakbés.</p>
+                <p>Urbanism had a great development in pre-Hispanic cultures, where we can see the magnitude of the cities of Teotihuacán, Tollan-Xicocotitlan and México-Tenochtitlan, within the environmentalist urbanism highlight the Mayan cities to be incorporated into the monumentality of its buildings with the thickness of the jungle and complex networks of roads called sakbés.With the arrival of the Spaniards, architectural theories of the Greco-Roman order with Arab influences were introduced. Due to the process of evangelization, when the first monastic temples and monasteries were built, their own models were projected, such as the mendicant monasteries, unique in their type in architecture. The interaction between Spaniards and natives gave rise to artistic styles such as the so-called tequitqui (from Nahuatl: worker). Years later the baroque and mannerism were imposed in large cathedrals and civil buildings, while rural areas are built haciendas or stately farms with Mozarabic tendencies.</p>
+                <p>In the 19th century the neoclassical movement arose as a response to the objectives of the republican nation, one of its examples are the Hospicio Cabañas where the strict plastic of the classical orders are represented in their architectural elements, new religious buildings also arise, civilian and military that demonstrate the presence of neoclassicism. Romanticists from a past seen through archeology show images of medieval Europe, Islamic and pre-Hispanic Mexico in the form of architectural elements in the construction of international exhibition pavilions looking for an identity typical of the national culture. The art nouveau, and the art deco were styles introduced into the design of the Palacio de Bellas Artes to mark the identity of the Mexican nation with Greek-Roman and pre-Hispanic symbols.</p>
+            </div>
+			<div>
+				<figure class="right photo-frame">
+					<img src="images/architect.jpg" alt="Zacatecas Cathedral">
+					<figcaption>Zacatecas Cathedral</figcaption>
+				</figure>
+			</div>
+			</section>
+
+			<section class="l-fpattern">
+			<h2>Cuisine</h2>
+            <div>
+			    <p>The origin of the current Mexican cuisine is established during the Spanish colonization, being a mixture of the foods of Spain and the native indigenous.[333] Of foods originated in Mexico is the corn, the pepper vegetables (together with Central and South America), calabazas (together with the Americas), avocados, sweet potato (together with Central and South America), the turkey (together with the Americas) and other fruits and spices. Other Indigenous products are many beans. Similarly, some cooking techniques used today are inherited from pre-Hispanic peoples, such as the nixtamalization of corn, the cooking of food in ovens at ground level, grinding in molcajete and metate. With the Spaniards came the pork, beef and chicken meats; peppercorn, sugar, milk and all its derivatives, wheat and rice, citrus fruits and another constellation of ingredients that are part of the daily diet of Mexicans.</p>
+                <p>From this meeting of millennia old two culinary traditions, were born pozole, mole sauce, Mexican barbecue and tamale is in its current forms, the chocolate, a large range of breads, tacos, and the broad repertoire of Mexican street foods. Beverages such as atole, champurrado, milk chocolate and aguas frescas were born; desserts such as acitrón and the full range of crystallized sweets, rompope, cajeta, jericaya and the wide repertoire of delights created in the convents of nuns in all parts of the country.</p>
+                <p>Some Mexican beverages have crossed their borders and are consumed daily in Central America, United States, Canada, Spain and Philippines; such is the case of margarita, agua de raíz and tequila. The history of the country and its links with other peoples allowed the incorporation of other cuisines to Mexican cuisine. The Manila galleon, brought from the east a range of varied spices and above all, the rice. A good mole poblano is unthinkable without Mexican rice. The Arab cuisine came to Mexico indirectly through the Spanish conquerors.</p>
+                <p>The invasions left their mark on the entire Mexican culture, and cooking is no exception. The taste for ground beef came with the Belgian army of Carlota of Mexico. The pan de caja was, according to legend, an invention of the American troops who came to Mexico in 1847. The arrival of immigrants from other latitudes throughout the 19th and 20th centuries also participated in the construction of Mexican cuisine. As an example, the Italian cheeses and the polenta that are made today in Chipilo, Puebla; or the Frenchs of Orizaba as well as their bread and (German Mennonites) of Chihuahua. The English miners of State of Hidalgo laid the foundations of paste, a puff pastry stuffed today with the same cheese and potatoes as the green mole of pumpkin seeds. The torta are bocadillos made with telera bread and, like the tacos, various foods such as ham and cheese, carne al pastor, cochinita pibil, chicken meat. It is said that they originated during the Reform War when it was necessary to find a way to distribute food among the Mexican troops. There are many beverages typical of Mexican cuisine: aguas frescas, atoles, chocolate, mezcal, tequila, wine, tepache, charanda, tejuino.</p>
+            </div>
+            <div>
+				<figure class="right photo-frame">
+					<img src="images/mole.jpg" alt="Mole sauce">
+					<figcaption>Mole sauce, which has dozens of varieties across the Republic, is seen as a symbol of Mexicanidad and is considered Mexico's national dish.</figcaption>
+				</figure>
+			</div>
+			</section>
+
+		<?php include "inc/footer.inc"; ?>
+		</div> <!--.container -->
+		<?php include "inc/scripts.inc"; ?>
+	</body>
+</html>

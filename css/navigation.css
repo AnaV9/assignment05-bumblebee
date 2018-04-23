@@ -1,0 +1,34 @@
+.nav{
+    float: left;
+	padding-top:10px;
+	padding-left: 10px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.nav ul {
+	border-collapse: collapse;
+	list-style: none;
+	margin: 0px;
+	padding-left: 0px;
+}
+
+.nav a {
+    color: black;
+    display: block;
+	padding: 10px 20px 10px 20px;
+}
+
+.nav li {
+	display: table-cell;
+}
+
+.nav a:hover{
+	background-color: rgb(255, 113, 91);
+	color:white;
+}
+
+.nav a.is-current {
+	background-color: white;
+	color:rgb(255, 113, 91);
+}
