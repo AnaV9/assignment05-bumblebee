@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Midterm 1 - Mexico</title>
+	<title>Assignment 05 - Animals</title>
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/navigation.css">
 	<link rel="stylesheet" href="sss/sss.css">
