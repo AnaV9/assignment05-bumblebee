@@ -1,15 +1,17 @@
 <?php
 //fetch.php
 $connect = mysqli_connect("localhost", "urcscon3_a5bbee", "csc174", "urcscon3_a5bbee");
-$columns = array('first_name', 'last_name');
+$columns = array('first_visit', 'website_finder', 'info_finder', 'email');
 
 $query = "SELECT * FROM user ";
 
 if(isset($_POST["search"]["value"]))
 {
  $query .= '
- WHERE first_name LIKE "%'.$_POST["search"]["value"].'%" 
- OR last_name LIKE "%'.$_POST["search"]["value"].'%" 
+ WHERE first_visit LIKE "%'.$_POST["search"]["value"].'%" 
+ OR website_finder LIKE "%'.$_POST["search"]["value"].'%" 
+ OR info_finder LIKE "%'.$_POST["search"]["value"].'%" 
+ OR email LIKE "%'.$_POST["search"]["value"].'%" 
  ';
 }
 
@@ -39,8 +41,10 @@ $data = array();
 while($row = mysqli_fetch_array($result))
 {
  $sub_array = array();
- $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="first_name">' . $row["first_name"] . '</div>';
- $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="last_name">' . $row["last_name"] . '</div>';
+ $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="first_visit">' . $row["first_visit"] . '</div>';
+ $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="website_finder">' . $row["website_finder"] . '</div>';
+ $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="info_finder">' . $row["info_finder"] . '</div>';
+ $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="email">' . $row["email"] . '</div>';
  $sub_array[] = '<button type="button" name="delete" class="btn btn-danger btn-xs delete" id="'.$row["id"].'">Delete</button>';
  $data[] = $sub_array;
 }

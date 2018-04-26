@@ -40,8 +40,10 @@
     <table id="user_data" class="table table-bordered table-striped">
      <thead>
       <tr>
-       <th>Frist Name</th>
-       <th>Last Name</th>
+       <th>First Visit</th>
+       <th>Website Finder</th>
+       <th>Info Finder</th>
+       <th>Email</th>
        <th></th>
       </tr>
      </thead>
@@ -98,20 +100,24 @@
    var html = '<tr>';
    html += '<td contenteditable id="data1"></td>';
    html += '<td contenteditable id="data2"></td>';
+   html += '<td contenteditable id="data3"></td>';
+   html += '<td contenteditable id="data4"></td>';
    html += '<td><button type="button" name="insert" id="insert" class="btn btn-success btn-xs">Insert</button></td>';
    html += '</tr>';
    $('#user_data tbody').prepend(html);
   });
   
   $(document).on('click', '#insert', function(){
-   var first_name = $('#data1').text();
-   var last_name = $('#data2').text();
-   if(first_name != '' && last_name != '')
+   var first_visit = $('#data1').text();
+   var website_finder = $('#data2').text();
+   var info_finder = $('#data3').text();
+   var email = $('#data4').text();
+   if(first_visit != '' &&  website_finder != '' &&  info_finder != '' &&  email != '')
    {
     $.ajax({
      url:"insert.php",
      method:"POST",
-     data:{first_name:first_name, last_name:last_name},
+     data:{first_visit:first_visit , website_finder:website_finder , info_finder:info_finder , email:email},
      success:function(data)
      {
       $('#alert_message').html('<div class="alert alert-success">'+data+'</div>');
