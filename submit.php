@@ -11,6 +11,9 @@
 
 	<button><a href="logout.php" type="submit" class="btn btn-danger">Sign Out</a></button>
 
-	
-
 </div>
+<?php include "inc/footer.inc"; ?>
+		</div> <!--.container -->
+		<?php include "inc/scripts.inc"; ?>
+	</body>
+</html>

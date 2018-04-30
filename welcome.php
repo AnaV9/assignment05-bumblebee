@@ -13,18 +13,13 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 	<body>
 	<section class = "banner">
         <?php include "inc/header.inc"; ?>
-		<?php include "inc/nav.inc"; ?>
+		<?php include "inc/navlogin.inc"; ?>
 	</section>
 		<div class= "container">
 
-		<div class = "slider"> 
-			<img src="images/lionlook.jpg" alt="Lion">
-			<img src="images/glook.jpg" alt="Giraffe">
-		</div>
-
 		<article>
-		<h2>Welcome</h2>
-			<p>To view exclusive content, please sign into your account.</p>
+		<h2>Welcome!</h2>
+			<p>As an admin you are able to view submitted surveys and see other registered admin.</p><p><a class="adminmore" href = "admin.php"> See More</a></p>
 		</article>
 
 		<?php include "inc/footer.inc"; ?>

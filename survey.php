@@ -4,7 +4,7 @@
         <?php include "inc/header.inc"; ?>
         <?php include "inc/nav.inc"; ?>
 	</section>
-
+	<div class= "container">
 
 <div class="form">
 	        	
@@ -50,3 +50,8 @@
 		</form>
 
 </div>
+<?php include "inc/footer.inc"; ?>
+		</div> <!--.container -->
+		<?php include "inc/scripts.inc"; ?>
+	</body>
+</html>
