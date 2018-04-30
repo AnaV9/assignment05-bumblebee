@@ -1,5 +1,5 @@
-<?php include "inc/html-top.inc";?>
-<?php  
+<?php
+	$connect = mysqli_connect("localhost", "urcscon3_a5bbee", "csc174", "urcscon3_a5bbee");
 	$visit = $_POST['visit'];
 	$animal = $_POST['animal'];
 	$info_finder = $_POST['info_finder'];

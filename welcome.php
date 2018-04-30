@@ -26,6 +26,5 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 		</div> <!--.container -->
 		<?php include "inc/scripts.inc"; ?>
 		</div>
-    	<p><a href="logout.php" class="btn btn-danger">Sign Out of Your Account</a></p>
 	</body>
 </html>

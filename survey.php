@@ -25,7 +25,7 @@
 					<h3>Please tell us how easy it is to find information on the site</h3>
 					  <input type="radio" name="info_finder" value="Easy"> Easy<br>
 					  <input type="radio" name="info_finder" value="Average"> Average<br>
-					  <input type="radio" name="info_finder" value="Difficult"> Dificult<br>
+					  <input type="radio" name="info_finder" value="Difficult"> Difficult<br>
 				</div>
 				
 				<br><br>

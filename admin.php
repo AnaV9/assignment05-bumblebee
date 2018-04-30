@@ -19,6 +19,12 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
 
             <section class = "banner">
                 <?php include "inc/header.inc"; ?>
+
+                <div class="strong">
+                    <form method="post" action="logout.php">
+                        <input type="submit" value="Sign Out">
+                    </form>
+                </div>
                 <?php include "inc/navlogin.inc"; ?>
             </section>
     
@@ -34,6 +40,8 @@ if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
         <?php include "inc/footer.inc"; ?>
                 </div> <!--.container -->
         <?php include "inc/scripts.inc"; ?>
+
+        
     </body>  
 </html>  
 
