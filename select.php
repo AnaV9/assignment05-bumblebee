@@ -1,5 +1,5 @@
+<?php include "inc/db.inc";?>
 <?php  
- $connect = mysqli_connect("localhost", "urcscon3_a5bbee", "csc174", "urcscon3_a5bbee");
  $output = '';  
  $sql = "SELECT * FROM myconnect ORDER BY id DESC";  
  $result = mysqli_query($connect, $sql);  
