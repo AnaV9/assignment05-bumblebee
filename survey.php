@@ -8,11 +8,11 @@
 	        	
 		<h1>Website Visitor Survey</h1>
 
-		<form method="post" action="thankyou.php">
+		<form method="post" action="connect.php">
 				<div class="form-group">
 					  <h3>Is this your first time visiting the website?</h3>
-					  <input type="radio" name="survey" value="Yes"> Yes<br>
-					  <input type="radio" name="survey" value="No"> No<br>
+					  <input type="radio" name="visit" value="Yes"> Yes<br>
+					  <input type="radio" name="visit" value="No"> No<br>
 				</div>
 
 				<div class="form-group">
@@ -23,9 +23,9 @@
 					
 				<div class="form-group">
 					<h3>Please tell us how easy it is to find information on the site</h3>
-					  <input type="radio" name="finder" value="Easy"> Easy<br>
-					  <input type="radio" name="finder" value="Average"> Average<br>
-					  <input type="radio" name="finder" value="Difficult"> Dificult<br>
+					  <input type="radio" name="info_finder" value="Easy"> Easy<br>
+					  <input type="radio" name="info_finder" value="Average"> Average<br>
+					  <input type="radio" name="info_finder" value="Difficult"> Dificult<br>
 				</div>
 				
 				<br><br>

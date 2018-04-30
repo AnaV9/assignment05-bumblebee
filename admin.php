@@ -1,137 +1,128 @@
-<?php include "inc/html-top.inc";?>
-	<body>
-	<section class = "banner">
-        <?php include "inc/header.inc"; ?>
-		<?php include "inc/navlogin.inc"; ?>
-	</section>
-		<div class= "container">
-   <h1 align="center">Live Add Edit Delete Datatables Records using PHP Ajax</h1>
-   <br />
-   <div class="table-responsive">
-   <br />
-    <div align="right">
-     <button type="button" name="add" id="add" class="btn btn-info">Add</button>
-    </div>
-    <br />
-    <div id="alert_message"></div>
-    <table id="user_data" class="table table-bordered table-striped">
-     <thead>
-      <tr>
-       <th>First Visit</th>
-       <th>Best Animal</th>
-       <th>Info Finder</th>
-      </tr>
-     </thead>
-    </table>
-   </div>
-   <?php include "inc/footer.inc"; ?>
-		</div> <!--.container -->
-		<?php include "inc/scripts.inc"; ?>
-	</body>
-</html>
+<?php
+// Initialize the session
+session_start();
+ 
+// If session variable is not set it will redirect to login page
+if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+  header("location: login.php");
+  exit;
+}
+?>
 
-<script type="text/javascript" language="javascript" >
- $(document).ready(function(){
-  
-  fetch_data();
+<html>  
+    <head>  
+        <title>Administration Section</title>  
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+    </head>  
+    <body class="admin2">  
 
-  function fetch_data()
-  {
-   var dataTable = $('#user_data').DataTable({
-    "processing" : true,
-    "serverSide" : true,
-    "order" : [],
-    "ajax" : {
-     url:"fetch.php",
-     type:"POST"
-    }
-   });
-  }
-  
-  function update_data(id, column_name, value)
-  {
-   $.ajax({
-    url:"update.php",
-    method:"POST",
-    data:{id:id, column_name:column_name, value:value},
-    success:function(data)
-    {
-     $('#alert_message').html('<div class="alert alert-success">'+data+'</div>');
-     $('#user_data').DataTable().destroy();
-     fetch_data();
-    }
-   });
-   setInterval(function(){
-    $('#alert_message').html('');
-   }, 5000);
-  }
+            <section class = "banner">
+                <?php include "inc/header.inc"; ?>
+                <?php include "inc/navlogin.inc"; ?>
+            </section>
+    
+         <main>
+                <div class="container">  
+        			<div class="table-responsive">  
+        				<span id="result"></span>
+        				<div id="live_data"></div>                 
+        			</div>  
+        		</div>
+        </main>
 
-  $(document).on('blur', '.update', function(){
-   var id = $(this).data("id");
-   var column_name = $(this).data("column");
-   var value = $(this).text();
-   update_data(id, column_name, value);
-  });
-  
-  $('#add').click(function(){
-   var html = '<tr>';
-   html += '<td contenteditable id="data1"></td>';
-   html += '<td contenteditable id="data2"></td>';
-   html += '<td contenteditable id="data3"></td>';
-   html += '<td><button type="button" name="insert" id="insert" class="btn btn-success btn-xs">Insert</button></td>';
-   html += '</tr>';
-   $('#user_data tbody').prepend(html);
-  });
-  
-  $(document).on('click', '#insert', function(){
-   var first_visit = $('#data1').text();
-   var best_animal = $('#data2').text();
-   var info_finder = $('#data3').text();
-   if(first_visit != '' &&  best_animal != '' &&  info_finder != '')
-   {
-    $.ajax({
-     url:"insert.php",
-     method:"POST",
-     data:{first_visit:first_visit , best_animal:best_animal , info_finder:info_finder},
-     success:function(data)
-     {
-      $('#alert_message').html('<div class="alert alert-success">'+data+'</div>');
-      $('#user_data').DataTable().destroy();
-      fetch_data();
-     }
-    });
-    setInterval(function(){
-     $('#alert_message').html('');
-    }, 5000);
-   }
-   else
-   {
-    alert("Both Fields is required");
-   }
-  });
-  
-  $(document).on('click', '.delete', function(){
-   var id = $(this).attr("id");
-   if(confirm("Are you sure you want to remove this?"))
-   {
-    $.ajax({
-     url:"delete.php",
-     method:"POST",
-     data:{id:id},
-     success:function(data){
-      $('#alert_message').html('<div class="alert alert-success">'+data+'</div>');
-      $('#user_data').DataTable().destroy();
-      fetch_data();
-     }
-    });
-    setInterval(function(){
-     $('#alert_message').html('');
-    }, 5000);
-   }
-  });
- });
+        <?php include "inc/footer.inc"; ?>
+                </div> <!--.container -->
+        <?php include "inc/scripts.inc"; ?>
+    </body>  
+</html>  
+
+<script>  
+$(document).ready(function(){  
+    function fetch_data()  
+    {  
+        $.ajax({  
+            url:"select.php",  
+            method:"POST",  
+            success:function(data){  
+                $('#live_data').html(data);  
+            }  
+        });  
+    }  
+    fetch_data();  
+    $(document).on('click', '#btn_add', function(){  
+        var visit = $('#visit').text();  
+        if(visit == '')  
+        {  
+            alert("Enter your visit");  
+            return false;  
+        }  
+        
+        var animal = $('#animal').text();  
+        if(animal == '')  
+        {  
+            alert("Enter your animal");  
+            return false;  
+        } 
+
+        var info_finder = $('#info_finder').text();  
+        if(info_finder == '')  
+        {  
+            alert("Enter your experience finding info");  
+            return false;  
+        } 
+
+        $.ajax({  
+            url:"insert.php",  
+            method:"POST",  
+            data:{visit:visit, animal:animal, info_finder:info_finder },  
+            dataType:"text",  
+            success:function(data)  
+            {  
+                alert(data);  
+                fetch_data();  
+            }  
+        })  
+    });  
+    
+    function edit_data(id, text, column_name)  
+    {  
+        $.ajax({  
+            url:"edit.php",  
+            method:"POST",  
+            data:{id:id, text:text, column_name:column_name},  
+            dataType:"text",  
+            success:function(data){  
+                //alert(data);
+                $('#result').html("<div class='alert alert-success'>"+data+"</div>");
+            }  
+        });  
+    }  
+    $(document).on('blur', '.vote', function(){  
+        var id = $(this).data("id1");  
+        var visit = $(this).text();  
+        var animal = $(this).text(); 
+        var info_finder = $(this).text(); 
+        edit_data(id, visit, "visit");  
+        edit_data(id, animal, "animal"); 
+        edit_data(id, info_finder, "info_finder"); 
+    });  
+    
+    $(document).on('click', '.btn_delete', function(){  
+        var id=$(this).data("id2");  
+        if(confirm("Are you sure you want to delete this?"))  
+        {  
+            $.ajax({  
+                url:"delete.php",  
+                method:"POST",  
+                data:{id:id},  
+                dataType:"text",  
+                success:function(data){  
+                    alert(data);  
+                    fetch_data();  
+                }  
+            });  
+        }  
+    });  
+});  
 </script>
-
-
-
-
