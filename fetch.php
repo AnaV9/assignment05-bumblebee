@@ -3,7 +3,7 @@
 $connect = mysqli_connect("localhost", "urcscon3_a5bbee", "csc174", "urcscon3_a5bbee");
 $columns = array('first_visit', 'best_animal', 'info_finder');
 
-$query = "SELECT * FROM user ";
+$query = "SELECT * FROM admin";
 
 if(isset($_POST["search"]["value"]))
 {
@@ -41,7 +41,7 @@ while($row = mysqli_fetch_array($result))
 {
  $sub_array = array();
  $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="first_visit">' . $row["first_visit"] . '</div>';
- $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="animal">' . $row["best_animal"] . '</div>';
+ $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="best_animal">' . $row["best_animal"] . '</div>';
  $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="info_finder">' . $row["info_finder"] . '</div>';
  $sub_array[] = '<button type="button" name="delete" class="btn btn-danger btn-xs delete" id="'.$row["id"].'">Delete</button>';
  $data[] = $sub_array;
@@ -49,7 +49,7 @@ while($row = mysqli_fetch_array($result))
 
 function get_all_data($connect)
 {
- $query = "SELECT * FROM user";
+ $query = "SELECT * FROM admin";
  $result = mysqli_query($connect, $query);
  return mysqli_num_rows($result);
 }

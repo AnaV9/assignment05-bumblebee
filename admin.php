@@ -20,8 +20,6 @@
        <th>First Visit</th>
        <th>Best Animal</th>
        <th>Info Finder</th>
-       <th></th>
-       <th></th>
       </tr>
      </thead>
     </table>

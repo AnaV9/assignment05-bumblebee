@@ -8,7 +8,7 @@
 	        	
 		<h1>Website Visitor Survey</h1>
 
-		<form method="post" action="fetch.php">
+		<form method="post" action="thankyou.php">
 				<div class="form-group">
 					  <h3>Is this your first time visiting the website?</h3>
 					  <input type="radio" name="survey" value="Yes"> Yes<br>
