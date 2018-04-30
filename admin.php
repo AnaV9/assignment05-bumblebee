@@ -18,9 +18,9 @@
      <thead>
       <tr>
        <th>First Visit</th>
-       <th>Website Finder</th>
+       <th>Best Animal</th>
        <th>Info Finder</th>
-       <th>Email</th>
+       <th></th>
        <th></th>
       </tr>
      </thead>
@@ -80,7 +80,6 @@
    html += '<td contenteditable id="data1"></td>';
    html += '<td contenteditable id="data2"></td>';
    html += '<td contenteditable id="data3"></td>';
-   html += '<td contenteditable id="data4"></td>';
    html += '<td><button type="button" name="insert" id="insert" class="btn btn-success btn-xs">Insert</button></td>';
    html += '</tr>';
    $('#user_data tbody').prepend(html);
@@ -88,15 +87,14 @@
   
   $(document).on('click', '#insert', function(){
    var first_visit = $('#data1').text();
-   var website_finder = $('#data2').text();
+   var best_animal = $('#data2').text();
    var info_finder = $('#data3').text();
-   var email = $('#data4').text();
-   if(first_visit != '' &&  website_finder != '' &&  info_finder != '' &&  email != '')
+   if(first_visit != '' &&  best_animal != '' &&  info_finder != '')
    {
     $.ajax({
      url:"insert.php",
      method:"POST",
-     data:{first_visit:first_visit , website_finder:website_finder , info_finder:info_finder , email:email},
+     data:{first_visit:first_visit , best_animal:best_animal , info_finder:info_finder},
      success:function(data)
      {
       $('#alert_message').html('<div class="alert alert-success">'+data+'</div>');

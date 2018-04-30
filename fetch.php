@@ -1,7 +1,7 @@
 <?php
 //fetch.php
 $connect = mysqli_connect("localhost", "urcscon3_a5bbee", "csc174", "urcscon3_a5bbee");
-$columns = array('first_visit', 'website_finder', 'info_finder', 'email');
+$columns = array('first_visit', 'best_animal', 'info_finder');
 
 $query = "SELECT * FROM user ";
 
@@ -9,9 +9,8 @@ if(isset($_POST["search"]["value"]))
 {
  $query .= '
  WHERE first_visit LIKE "%'.$_POST["search"]["value"].'%" 
- OR website_finder LIKE "%'.$_POST["search"]["value"].'%" 
+ OR best_animal LIKE "%'.$_POST["search"]["value"].'%" 
  OR info_finder LIKE "%'.$_POST["search"]["value"].'%" 
- OR email LIKE "%'.$_POST["search"]["value"].'%" 
  ';
 }
 
@@ -42,9 +41,8 @@ while($row = mysqli_fetch_array($result))
 {
  $sub_array = array();
  $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="first_visit">' . $row["first_visit"] . '</div>';
- $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="website_finder">' . $row["website_finder"] . '</div>';
+ $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="animal">' . $row["best_animal"] . '</div>';
  $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="info_finder">' . $row["info_finder"] . '</div>';
- $sub_array[] = '<div contenteditable class="update" data-id="'.$row["id"].'" data-column="email">' . $row["email"] . '</div>';
  $sub_array[] = '<button type="button" name="delete" class="btn btn-danger btn-xs delete" id="'.$row["id"].'">Delete</button>';
  $data[] = $sub_array;
 }
