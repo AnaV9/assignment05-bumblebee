@@ -100,13 +100,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 		<?php include "inc/nav.inc"; ?>
 	</section>
 		<div class= "container">
-                <div class="wrapper">
+                <div class= "wrapper">
                     <h2>Sign Up</h2>
                     <p>Please fill this form to create an account.</p>
                     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                             <label>Username</label>
-                            <input type="text" name="username"class="form-control" value="<?php echo $username; ?>">
+                            <input type="text" name="username" class="form-control" value="<?php echo $username; ?>">
                             <span class="help-block"><?php echo $username_err; ?></span>
                         </div>    
                         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">

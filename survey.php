@@ -34,12 +34,8 @@
 					<input type="submit" name="submit" value="submit">
 				</div>
 		</form>
-
-
-
-</div>
-<?php include "inc/footer.inc"; ?>
-		</div> <!--.container -->
-		<?php include "inc/scripts.inc"; ?>
+		<?php include "inc/footer.inc"; ?>
+	</div> <!--.container -->
+	<?php include "inc/scripts.inc"; ?>
 	</body>
 </html>
